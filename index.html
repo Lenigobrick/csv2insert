@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CSV → SQL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>CSV → SQL</h1>
+
+  <div id="drop-zone" class="drop-zone">
+    <p><strong>Glisser un CSV ici</strong><br>ou cliquer pour parcourir</p>
+  </div>
+
+  <div class="options">
+    <label>
+      Table name
+      <input id="table" placeholder="ma_table">
+    </label>
+
+    <label>
+      Batch size
+      <input id="batch" value="1000">
+    </label>
+
+    <label class="checkbox">
+      <input type="checkbox" id="withId" checked>
+      Ajouter colonne ID auto-increment
+    </label>
+  </div>
+
+  <div class="preview">
+    <h3>Preview</h3>
+    <pre id="preview">Aucun fichier chargé</pre>
+  </div>
+
+  <button id="convert">Convertir → SQL</button>
+
+  <p id="status"></p>
+</div>
+
+<script src="renderer.js"></script>
+</body>
+</html>

@@ -2,9 +2,9 @@
   "name": "csv2insert",
   "version": "1.0.0",
   "description": "Convert your .csv files to a .sql file with create table &amp; insert into",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "dev": "node ./src/index.js"
+    "dev": "electron ."
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Lenigobrick/csv2insert/issues"
   },
-  "homepage": "https://github.com/Lenigobrick/csv2insert#readme"
+  "homepage": "https://github.com/Lenigobrick/csv2insert#readme",
+  "dependencies": {
+    "electron": "^39.2.7"
+  }
 }

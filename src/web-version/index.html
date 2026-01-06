@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSV → SQL</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>CSV → SQL</h1>
+    <p>Convertisseur CSV en CREATE TABLE + INSERT</p>
+
+    <div class="box">
+      <label>Fichier CSV</label>
+      <input type="file" id="csvFile" accept=".csv" />
+    </div>
+
+    <div class="box">
+      <label>Nom de la table</label>
+      <input type="text" id="tableName" placeholder="datagouvemp" />
+    </div>
+
+    <div class="box inline">
+      <label>
+        <input type="checkbox" id="addId" checked />
+        Ajouter <code>id INT AUTO_INCREMENT PRIMARY KEY</code>
+      </label>
+    </div>
+
+    <button id="generateBtn">🚀 Générer SQL</button>
+
+    <h2>Résultat SQL</h2>
+    <textarea id="output" placeholder="Le SQL apparaîtra ici..."></textarea>
+
+    <button id="downloadBtn">💾 Télécharger output.sql</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
