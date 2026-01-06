@@ -7,14 +7,14 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 900,
     height: 725,
-    //minWidth: 900,
-    //maxWidth: 900,
-    //minHeight: 700,
-    //maxHeight: 700,
+    minWidth: 900,
+    maxWidth: 900,
+    minHeight: 700,
+    maxHeight: 700,
     autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
-      //devTools: false
+      devTools: false
     }
   });
 
